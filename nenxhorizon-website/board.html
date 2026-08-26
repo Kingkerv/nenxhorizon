@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadmap — NenXHorizon</title>
+<meta name="description" content="What is already in NenXHorizon, what is being built right now, and what is planned next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__in">
+    <a class="brand" href="index.html">
+      <span class="brand__name">NEN<span>X</span>HORIZON</span>
+      <span class="brand__kanji">念</span>
+    </a>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false">☰</button>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="board.html" aria-current="page">Roadmap</a>
+      <a href="registry.html">Registry</a>
+      <a href="#" data-link="roblox">Play</a>
+      <a href="#" data-link="discord">Discord</a>
+    </div>
+  </div>
+</nav>
+
+<header class="phead">
+  <span class="phead__cj" aria-hidden="true">道程</span>
+  <div class="wrap">
+    <p class="eyebrow">The board</p>
+    <h1>Roadmap</h1>
+    <p class="lede" style="margin-top:1rem">
+      Nothing gets promised without a column. <strong id="board-total">0</strong> things tracked, and the
+      left column is what you can go and use right now.
+    </p>
+  </div>
+</header>
+
+<main class="wrap section">
+  <div class="board">
+
+    <section class="col col--done rv">
+      <div class="col__head">
+        <span class="col__dot"></span>
+        <span class="col__title">Done</span>
+        <span class="col__count" id="count-done">0</span>
+      </div>
+      <div class="col__body" id="col-done"></div>
+    </section>
+
+    <section class="col col--wip rv">
+      <div class="col__head">
+        <span class="col__dot"></span>
+        <span class="col__title">In progress</span>
+        <span class="col__count" id="count-doing">0</span>
+      </div>
+      <div class="col__body" id="col-doing"></div>
+    </section>
+
+    <section class="col col--plan rv">
+      <div class="col__head">
+        <span class="col__dot"></span>
+        <span class="col__title">Planned</span>
+        <span class="col__count" id="count-planned">0</span>
+      </div>
+      <div class="col__body" id="col-planned"></div>
+    </section>
+
+  </div>
+
+  <div class="panel panel--accent rv" style="margin-top:36px">
+    <p class="muted" style="font-size:.92rem;margin:0">
+      <strong>Planned</strong> means it is designed and queued, not that it has a date. Things move up the board
+      when they work in game, not when they work in theory.
+    </p>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <div class="brand" style="margin-bottom:.6rem">
+        <span class="brand__name">NEN<span>X</span>HORIZON</span>
+        <span class="brand__kanji">念</span>
+      </div>
+      <p class="foot__note">
+        Made by kingkerveu. A fan project inspired by Hunter x Hunter, not affiliated with or endorsed by
+        its rights holders. © <span data-year>2026</span>
+      </p>
+    </div>
+    <div class="foot__links">
+      <a href="index.html">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="registry.html">Registry</a>
+      <a href="#" data-link="roblox">Roblox</a>
+      <a href="#" data-link="discord">Discord</a>
+      <a href="#" data-link="group">Group</a>
+      <a href="#" data-link="youtube">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/links.js"></script>
+<script src="data/board.js"></script>
+<script src="assets/js/board.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

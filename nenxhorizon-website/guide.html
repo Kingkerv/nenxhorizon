@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Guide — NenXHorizon</title>
+<meta name="description" content="How NenXHorizon actually works: character creation, the full combat system, the six nen principles, nen cards, stats and Total Power, fighting styles, and the living island.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__in">
+    <a class="brand" href="index.html">
+      <span class="brand__name">NEN<span>X</span>HORIZON</span>
+      <span class="brand__kanji">念</span>
+    </a>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false">☰</button>
+    <div class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="guide.html" aria-current="page">Guide</a>
+      <a href="board.html">Roadmap</a>
+      <a href="registry.html">Registry</a>
+      <a href="#" data-link="roblox">Play</a>
+      <a href="#" data-link="discord">Discord</a>
+    </div>
+  </div>
+</nav>
+
+<header class="phead">
+  <span class="phead__cj" aria-hidden="true">指南</span>
+  <div class="wrap">
+    <p class="eyebrow">The guide</p>
+    <h1>How the world works</h1>
+    <p class="lede" style="margin-top:1rem">
+      Everything the island will not stop to explain. Read it in order the first time, then come back
+      for the chapter you need.
+    </p>
+  </div>
+</header>
+
+<main class="wrap guide">
+
+  <!-- ============ TABLE OF CONTENTS ============ -->
+  <aside class="toc">
+    <p class="toc__title">Contents</p>
+    <ul class="toc__list">
+      <li><a href="#start"><span class="cj">首</span> Getting started</a></li>
+      <li><a href="#creation"><span class="cj">生</span> Character creation</a></li>
+      <li><a href="#codes"><span class="cj">券</span> Redeem codes</a></li>
+      <li><a href="#combat"><span class="cj">闘</span> Combat</a></li>
+      <li><a href="#nen"><span class="cj">念</span> Nen</a></li>
+      <li><a href="#cards"><span class="cj">札</span> Nen cards</a></li>
+      <li><a href="#stats"><span class="cj">力</span> Stats &amp; Total Power</a></li>
+      <li><a href="#styles"><span class="cj">流</span> Fighting styles</a></li>
+      <li><a href="#world"><span class="cj">島</span> The living island</a></li>
+      <li><a href="#life"><span class="cj">暮</span> Life &amp; economy</a></li>
+    </ul>
+  </aside>
+
+  <div>
+
+  <!-- ==================== 01 GETTING STARTED ==================== -->
+  <section class="chapter rv" id="start">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 01</span>
+      <h2>Getting started <span class="cj">首途</span></h2>
+    </div>
+
+    <p class="lede">NenXHorizon is three places, and you move between them as you progress.</p>
+
+    <div class="grid grid--3" style="margin:26px 0">
+      <div class="panel panel--accent">
+        <h4 style="margin-top:0">Menu</h4>
+        <p class="muted" style="font-size:.92rem">Where you are born. Six character slots, all the rolling,
+        all the customising. Nothing here is permanent until you enter the world.</p>
+      </div>
+      <div class="panel panel--accent">
+        <h4 style="margin-top:0">World</h4>
+        <p class="muted" style="font-size:.92rem">Whale Island. Port town, forest, shore, and the sky spar
+        arena. This is where you train, fight, hunt, fish, and live.</p>
+      </div>
+      <div class="panel panel--accent">
+        <h4 style="margin-top:0">Exams</h4>
+        <p class="muted" style="font-size:.92rem">The Hunter Exam. Passing it is the gate to nen. Until you
+        clear it, meditation gives you nothing but a bad feeling.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <span class="note__label">Order of operations</span>
+      Make a character → learn the combat system in the world → pass the exam → awaken nen → train the six
+      principles → collect cards → push your stats to the cap → chase a master. That is the spine of the game.
+    </div>
+
+    <p class="muted">
+      Everything you see, the faces, the GUIs, the moon phases, the emote icons, is hand made. The rigs are R6.
+      If something looks drawn rather than generated, that is because it was.
+    </p>
+  </section>
+
+  <!-- ==================== 02 CHARACTER CREATION ==================== -->
+  <section class="chapter rv" id="creation">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 02</span>
+      <h2>Character creation <span class="cj">生誕</span></h2>
+    </div>
+
+    <p class="lede">Six nameable slots. Six lives. Roll them until one feels like yours.</p>
+
+    <figure class="shot" style="margin:26px 0">
+      <div class="shot__frame" data-shot="menu-character-creation.jpg" data-size="1600 × 900" data-label="menu-character-creation.jpg"></div>
+      <figcaption>The creation menu. Everything on the left is picked, everything on the right is rolled.</figcaption>
+    </figure>
+
+    <h3>What you pick</h3>
+    <p class="muted">
+      Hair, skin, eyes and faces are chosen straight from the list. Traits are chosen too. This is the part
+      of your character you are in control of, so take your time with it.
+    </p>
+
+    <h3>What you roll</h3>
+    <p class="muted">
+      Everything else is a spin, and spins are the currency of creation. Four things come out of the machine:
+    </p>
+
+    <table class="moves">
+      <thead><tr><th>Spin</th><th>What it rolls</th></tr></thead>
+      <tbody>
+        <tr><td><span class="k">Gender</span></td><td>Straightforward. Reroll as many times as you like.</td></tr>
+        <tr><td><span class="k">Height</span></td><td>Your height in centimetres. Small and tall builds feel genuinely different to play.</td></tr>
+        <tr><td><span class="k">Face mark</span></td><td>60% of the time you get a clean face. Marks are the rare outcome, not the default.</td></tr>
+        <tr><td><span class="k">Clan</span></td><td>Your bloodline. This is the one people grind for.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Clans</h3>
+    <p class="muted">
+      Bloodlines sit on a rarity table, and at the very bottom of it is <span class="k-red">Zoldyck at 0.05%</span>.
+      That is one in two thousand spins. People have burned a thousand clan spins and walked away without it.
+      That is the point.
+    </p>
+
+    <div class="note note--gold">
+      <span class="note__label">Spin economy</span>
+      Spins come from Jenny and from redeem codes. If you are hunting a specific clan, stack clan spins from
+      codes first (see the next chapter) rather than grinding one at a time.
+    </div>
+
+    <figure class="shot" style="margin:26px 0">
+      <div class="shot__frame" data-shot="menu-clan-spin.jpg" data-size="1600 × 900" data-label="menu-clan-spin.jpg"></div>
+      <figcaption>A clan spin resolving.</figcaption>
+    </figure>
+
+    <h3>The mannequin</h3>
+    <p class="muted">
+      The preview model in front of you is not a statue. Poke him and he reacts, and where you poke changes
+      what you get. There are angry zones, sad zones and surprised zones. Poke his feet enough and he gets
+      genuinely sad about it. Nobody has to find this. Everybody does.
+    </p>
+  </section>
+
+  <!-- ==================== 03 CODES ==================== -->
+  <section class="chapter rv" id="codes">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 03</span>
+      <h2>Redeem codes <span class="cj">引換券</span></h2>
+    </div>
+
+    <p class="lede">Enter these in the redeem box in the menu. Click any code below to copy it.</p>
+
+    <h4>Open to everyone</h4>
+    <div class="codes">
+      <div class="code"><span class="code__id">NENXLAUNCH</span><span class="code__gift">10,000 Jenny + 1 clan spin</span></div>
+      <div class="code"><span class="code__id">HUNTERSTART</span><span class="code__gift">5,000 Jenny</span></div>
+      <div class="code"><span class="code__id">SATOTZ</span><span class="code__gift">1 height spin</span></div>
+      <div class="code"><span class="code__id">BLOODLINE</span><span class="code__gift">3 clan spins</span></div>
+      <div class="code"><span class="code__id">NENXCLANS</span><span class="code__gift">1 clan spin</span></div>
+    </div>
+
+    <h4>Limited — first come, gone forever</h4>
+    <div class="codes">
+      <div class="code"><span class="code__rare">1000 only</span><span class="code__id">ZOLDYCK</span><span class="code__gift">5 clan spins, first 1,000 players</span></div>
+      <div class="code"><span class="code__rare">2 only</span><span class="code__id">CHOSENTWO</span><span class="code__gift">1,000 clan spins. Two people, ever.</span></div>
+      <div class="code"><span class="code__rare">5 only</span><span class="code__id">PHANTOMFIVE</span><span class="code__gift">1,000,000 Jenny + 1,000 spins. Five people, ever.</span></div>
+      <div class="code"><span class="code__rare">5 only</span><span class="code__id">KINGSHAND</span><span class="code__gift">100 of every spin type. Five people, ever.</span></div>
+    </div>
+
+    <div class="note note--red">
+      <span class="note__label">Do not sit on these</span>
+      The limited codes are capped by number of redemptions, not by date. Once the counter fills, that code
+      is dead for everyone who comes after. If you are reading this and you have not redeemed them, go now.
+    </div>
+  </section>
+
+  <!-- ==================== 04 COMBAT ==================== -->
+  <section class="chapter rv" id="combat">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 04</span>
+      <h2>Combat <span class="cj">戦闘</span></h2>
+    </div>
+
+    <p class="lede">
+      This is the deepest system in the game and the one worth actually learning. Offence is easy.
+      Defence is where the ceiling is.
+    </p>
+
+    <figure class="shot" style="margin:26px 0">
+      <div class="shot__frame" data-shot="combat-chain.jpg" data-size="1600 × 900" data-label="combat-chain.jpg"></div>
+      <figcaption>Mid-chain. The fifth hit is the one that sends them.</figcaption>
+    </figure>
+
+    <h3>The chain</h3>
+    <p class="muted">
+      Your basic attack is a <span class="k">five-hit chain</span>. The chain has variants you steer into it:
+      hold <kbd>Space</kbd> for a launcher, hold <kbd>S</kbd> for a slam. The fifth hit
+      <span class="k-red">ragdolls</span> your victim and sends them flying, which is both the reward for
+      landing a full chain and the moment they get a chance to escape.
+    </p>
+
+    <h4>Air combos</h4>
+    <p class="muted">
+      Launcher, then juggle them in the air, then air slam to put them back on the ground. From a double jump
+      you also get a dive slam. Air routes do not do more damage for free, they do it because staying in the
+      air is harder to escape from.
+    </p>
+
+    <h4>The heavy</h4>
+    <p class="muted">
+      M2 is your heavy. It is deliberately <span class="k-red">telegraphed with a red glint</span> so a good
+      opponent can see it coming, but it <strong>breaks raised guards</strong>, which is the answer to someone
+      who will not stop blocking. And it can be <span class="k">feinted</span>, which is the answer to someone
+      who has learned to punish it.
+    </p>
+
+    <table class="moves">
+      <thead><tr><th>Input</th><th>Move</th><th>What it is for</th></tr></thead>
+      <tbody>
+        <tr><td><kbd>M1</kbd></td><td>Five-hit chain</td><td>Bread and butter. Fifth hit ragdolls.</td></tr>
+        <tr><td><kbd>M1</kbd> + <kbd>Space</kbd></td><td>Launcher</td><td>Starts an air route.</td></tr>
+        <tr><td><kbd>M1</kbd> + <kbd>S</kbd></td><td>Slam</td><td>Puts them on the floor.</td></tr>
+        <tr><td><kbd>M2</kbd></td><td>Heavy</td><td>Breaks guard. Telegraphed. Feintable.</td></tr>
+        <tr><td>double jump + <kbd>M1</kbd></td><td>Dive slam</td><td>Air-to-ground pressure.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Defence</h3>
+    <p class="muted">There are five ways to not get hit, and they cost different things.</p>
+
+    <figure class="shot" style="margin:22px 0">
+      <div class="shot__frame" data-shot="combat-parry.jpg" data-size="1600 × 900" data-label="combat-parry.jpg"></div>
+      <figcaption>A parry landing. Bubbles are spent on success, not on the attempt.</figcaption>
+    </figure>
+
+    <table class="moves">
+      <thead><tr><th>Option</th><th>How it works</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="k">Block</span></td>
+          <td>Raise your guard and take chip damage. Your guard meter drains. Empty it and it
+              <span class="k-red">shatters</span>, and you eat a 2 second stun. Blocking is not free safety,
+              it is a resource.</td>
+        </tr>
+        <tr>
+          <td><span class="k">Perfect block</span></td>
+          <td>Raise the guard on the exact frames the hit lands and you absorb it completely. Anything.
+              No chip, no meter. This is the highest-value defensive option in the game.</td>
+        </tr>
+        <tr>
+          <td><span class="k">Parry</span> <kbd>F</kbd></td>
+          <td>Runs on <strong>bubbles</strong>. Here is the important part: a <em>successful</em> parry spends a
+              bubble, a failed attempt does not. You earn bubbles back by landing full combos. Parry has a
+              5 second cooldown, so it is a scalpel, not a wall.</td>
+        </tr>
+        <tr>
+          <td><span class="k">Dodge</span></td>
+          <td>Comes with invincibility frames. Cheap, spammable, and the answer to most pressure.</td>
+        </tr>
+        <tr>
+          <td><span class="k">Perfect dodge</span></td>
+          <td>I-frame directly through a hit rather than around it and you <strong>arm a counter punch</strong>.
+              Risky read, big payoff.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note note--red">
+      <span class="note__label">The pressure law</span>
+      While you are being comboed you <strong>cannot attack back</strong>. Mashing does nothing. Your only outs
+      are <span class="k">block</span>, <span class="k">dash</span>, <span class="k">aura burst</span>, and
+      <span class="k">tech</span>. Internalise this and half your losses stop happening.
+    </div>
+
+    <h3>Movement tech</h3>
+    <ul>
+      <li><strong>Dash cancel.</strong> Dash out of your own M1 recovery to stay safe or reset your pressure.</li>
+      <li><strong>Tech.</strong> Jump the instant you get launched and you breakfall out of the ragdoll instead of
+          eating the full ride. It works on the mobile jump button too, so phone players are not locked out of it.</li>
+      <li><strong>Wall splat.</strong> Launch someone into a wall and they crunch into it and crumple. Positioning
+          is damage.</li>
+    </ul>
+
+    <h3>Aura burst <kbd>G</kbd></h3>
+    <p class="muted">
+      You build burst by <em>taking</em> hits, which means the person losing the exchange is the one who gets the
+      escape button. Burst detonates you out of a combo. It is not free: it can be
+      <span class="k-red">parried</span>, and if you whiff it you are wide open. Burst is a read, not a panic button.
+    </p>
+
+    <h3>Ryu strike</h3>
+    <div class="note note--gold">
+      <span class="note__label">Legendary card unlock</span>
+      Click at the <strong>exact instant your punch connects</strong> and the next one ignites: 1.5× damage and the
+      screen cracks. Ryu also arms the counter off a perfect block. It is a timing minigame layered on top of your
+      normal chain, and once you can do it consistently your damage ceiling changes shape.
+    </div>
+
+    <h3>The ambush</h3>
+    <p class="muted">
+      Crouch, get behind someone, stay unseen, and you get an <span class="k-red">assassination</span>: three
+      quarters of their maximum health in one full execution animation. They get magnetised in, arched back and
+      crumpled. It is the single most violent thing in the game.
+    </p>
+    <p class="muted">
+      The counter exists: the <span class="k">En</span> sense card can auto-slip an ambush before it lands.
+      Zetsu on the attacker's side fuels it. This is a real cat-and-mouse layer, not a gotcha.
+    </p>
+  </section>
+
+  <!-- ==================== 05 NEN ==================== -->
+  <section class="chapter rv" id="nen">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 05</span>
+      <h2>Nen <span class="cj">念</span></h2>
+    </div>
+
+    <p class="lede">Nen is gated behind the Hunter Exam. There is no shortcut and there is no code for it.</p>
+
+    <figure class="shot" style="margin:26px 0">
+      <div class="shot__frame" data-shot="nen-meditation.jpg" data-size="1600 × 900" data-label="nen-meditation.jpg"></div>
+      <figcaption>Meditation. Not in a safe zone, and not before the exam.</figcaption>
+    </figure>
+
+    <h3>Awakening</h3>
+    <ul>
+      <li>You must be a <strong>Hunter</strong>. Pass the exam first.</li>
+      <li>You awaken it by <strong>meditating</strong>.</li>
+      <li>You <strong>cannot meditate in safe zones</strong>. The world wants you exposed for this.</li>
+      <li>Try to meditate before the exam and all you get is a whisper: <em>"something feels weird..."</em></li>
+    </ul>
+
+    <h3>The six principles</h3>
+    <p class="muted">Each one trains independently, five levels each. Their sum is your nen rank.</p>
+
+    <div class="principles">
+      <div class="principle"><span class="cj">纏</span><span class="rom">TEN</span><span class="d">Your baseline aura. The foundation everything else sits on.</span></div>
+      <div class="principle"><span class="cj">練</span><span class="rom">REN</span><span class="d">Output. Pushing your aura harder than it wants to go.</span></div>
+      <div class="principle"><span class="cj">絶</span><span class="rom">ZETSU</span><span class="d">Shut it all off. You vanish, and you take <span class="k-red">+30% damage</span>.</span></div>
+      <div class="principle"><span class="cj">凝</span><span class="rom">GYO</span><span class="d">Focus. Concentrate aura where you need it to be.</span></div>
+      <div class="principle"><span class="cj">円</span><span class="rom">EN</span><span class="d">Sense. Feel what you cannot see coming.</span></div>
+      <div class="principle"><span class="cj">硬</span><span class="rom">KO</span><span class="d">Everything into one punch. <span class="k">Shatters guards.</span></span></div>
+    </div>
+
+    <h4>Zetsu is a trade, not a stealth button</h4>
+    <p class="muted">
+      Zetsu hides you and it is what makes the assassination possible, but while you are in it you take
+      <span class="k-red">30% more damage</span>. If you get caught in zetsu you are not going to like what happens.
+    </p>
+
+    <h3>Nen rank</h3>
+    <p class="muted">
+      Add up your six principle levels and you get a rank on the <span class="k">F → SSS</span> ladder. You wear it
+      on your shoulder, where everyone can read it before the fight starts. It also feeds your Total Power.
+    </p>
+  </section>
+
+  <!-- ==================== 06 CARDS ==================== -->
+  <section class="chapter rv" id="cards">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 06</span>
+      <h2>Nen cards <span class="cj">念札</span></h2>
+    </div>
+
+    <p class="lede">Every principle level-up deals you three cards. You keep one. Forever.</p>
+
+    <figure class="shot" style="margin:26px 0">
+      <div class="shot__frame" data-shot="nen-cards.jpg" data-size="1600 × 900" data-label="nen-cards.jpg"></div>
+      <figcaption>A hand of three. Choose carefully, there is no undo.</figcaption>
+    </figure>
+
+    <div class="grid grid--3" style="margin:22px 0">
+      <div class="panel"><h4 style="margin-top:0;color:var(--ink-soft)">Common</h4><p class="muted" style="font-size:.9rem;margin:0">The backbone of most builds. Solid, stackable, unglamorous.</p></div>
+      <div class="panel" style="border-left:2px solid var(--violet)"><h4 style="margin-top:0;color:var(--violet)">Rare</h4><p class="muted" style="font-size:.9rem;margin:0">Build-shaping. Where your character starts to be a specific character.</p></div>
+      <div class="panel panel--gold"><h4 style="margin-top:0">Legendary</h4><p class="muted" style="font-size:.9rem;margin:0">Roughly one hand in thirty contains one. These change how you play, not how hard you hit.</p></div>
+    </div>
+
+    <p class="muted">
+      There are around <strong>56 cards</strong> in the pool. Two you will hear people talk about:
+    </p>
+    <ul>
+      <li><span class="k-gold">RYU — THE FLOW</span> unlocks the Ryu strike and the perfect-block counter.</li>
+      <li><span class="k-gold">SIXTH SENSE</span> is the En card that can auto-slip an incoming assassination.</li>
+    </ul>
+
+    <div class="note">
+      <span class="note__label">Deck thinking</span>
+      Because a level-up only ever gives you one keep out of three, your card set is a record of the choices you
+      made, not a shopping list you filled. Two players with identical stats can play completely differently.
+    </div>
+  </section>
+
+  <!-- ==================== 07 STATS ==================== -->
+  <section class="chapter rv" id="stats">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 07</span>
+      <h2>Stats &amp; Total Power <span class="cj">能力</span></h2>
+    </div>
+
+    <p class="lede">Four stats, a hard cap, a soft cap that bites before it, and one permanent decision at the end.</p>
+
+    <div class="panel" style="margin:24px 0">
+      <div class="stat-row"><span class="lbl">STR</span><span class="bar"><i style="width:80%"></i></span><span class="val">cap 50</span></div>
+      <div class="stat-row"><span class="lbl">DEF</span><span class="bar"><i style="width:80%"></i></span><span class="val">cap 50</span></div>
+      <div class="stat-row"><span class="lbl">AGI</span><span class="bar"><i style="width:80%"></i></span><span class="val">cap 50</span></div>
+      <div class="stat-row"><span class="lbl">STYLE</span><span class="bar"><i style="width:80%"></i></span><span class="val">cap 50</span></div>
+      <p class="faint" style="font-size:.8rem;margin:14px 0 0;font-family:var(--f-mono)">Soft cap sits at 40. Points past it still count, they just stop feeling generous.</p>
+    </div>
+
+    <h3>What AGI actually does</h3>
+    <p class="muted">
+      Do not read AGI as "run faster". It is your <strong>stamina tank</strong>, your <strong>stamina regen</strong>,
+      and a <strong>discount on what everything costs</strong>. An AGI build does not out-run you, it out-lasts you
+      and gets to use its options more often than you get to use yours.
+    </p>
+
+    <h3>Two different worlds: PvE and PvP</h3>
+    <table class="moves">
+      <thead><tr><th>Against</th><th>How your stats read</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="k">NPCs</span></td>
+          <td>Full power. A 50 STR build hits for roughly <strong>+27%</strong>. Grinding shows.</td>
+        </tr>
+        <tr>
+          <td><span class="k">Players</span></td>
+          <td>Measured in notches: about <strong>0.2% per 10 points</strong>. That is deliberate. It means a fresh
+              player and a maxed player can have a real fight and skill decides it.</td>
+        </tr>
+        <tr>
+          <td><span class="k-red">Players at max level</span></td>
+          <td>The notches <strong>quintuple</strong>. Once everyone is capped, the build finally matters again.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>The uncap</h3>
+    <div class="note note--red">
+      <span class="note__label">Permanent. No respec.</span>
+      At max level you choose one of two paths, and you live with it:
+      <ul style="margin:.7em 0 0;padding-left:1.15em">
+        <li><strong>ALL IN</strong> — one stat to <span class="k-red">70</span>.</li>
+        <li><strong>SPLIT</strong> — two stats to <span class="k-red">60</span>.</li>
+      </ul>
+    </div>
+
+    <h3>Total Power</h3>
+    <p class="muted">
+      TP is the one number you flex. It folds together your level, your spent points, your nen rank, your
+      awakening and your style tier into a single figure, and it shows up in both Stats and Settings.
+      It is the fastest way to know whether the person walking toward you is a problem.
+    </p>
+
+    <figure class="shot" style="margin:26px 0">
+      <div class="shot__frame" data-shot="stats-panel.jpg" data-size="1600 × 900" data-label="stats-panel.jpg"></div>
+      <figcaption>The stats panel with Total Power up top.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ==================== 08 STYLES ==================== -->
+  <section class="chapter rv" id="styles">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 08</span>
+      <h2>Fighting styles <span class="cj">流派</span></h2>
+    </div>
+
+    <p class="lede">You do not buy a style. You take it off a master by beating him.</p>
+
+    <figure class="shot" style="margin:26px 0">
+      <div class="shot__frame" data-shot="styles-master.jpg" data-size="1600 × 900" data-label="styles-master.jpg"></div>
+      <figcaption>Sparring a master. The only source of style XP.</figcaption>
+    </figure>
+
+    <p class="muted">
+      <span class="k">Karate</span> is live. Boxing, Muay Thai and Kickboxing have their slots waiting.
+      You learn by <strong>sparring the master</strong>, and there are <strong>ten difficulty rungs</strong>.
+      You climb them one at a time, in order.
+    </p>
+
+    <table class="moves">
+      <thead><tr><th>Rung</th><th>What you are up against</th></tr></thead>
+      <tbody>
+        <tr><td><strong>LV 1</strong></td><td>A breeze. He is teaching, not fighting.</td></tr>
+        <tr><td><strong>LV 2–6</strong></td><td>He stops being polite. Real routes, real punishes.</td></tr>
+        <tr><td><strong>LV 7–9</strong></td><td><span class="k-red">ENRAGE</span> phases. Glowing smashes that <strong>cannot be parried</strong>. Your parry habits stop working here.</td></tr>
+        <tr><td><strong>LV 10</strong></td><td><span class="k-gold">THE TRUE MASTER.</span> 2×+ your stats and a genius AI: he reads dodges, punishes whiffs, anti-airs you, and remembers your parry timings.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note note--red">
+      <span class="note__label">Style XP is meant to hurt</span>
+      You only earn style XP from <strong>wins</strong>. Losses give nothing. And there is a
+      <strong>30 minute cooldown</strong> after a win. This is scarcity on purpose: a high style tier is a
+      statement about how many real fights you have won, not how many hours you left the game open.
+    </div>
+  </section>
+
+  <!-- ==================== 09 WORLD ==================== -->
+  <section class="chapter rv" id="world">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 09</span>
+      <h2>The living island <span class="cj">島</span></h2>
+    </div>
+
+    <p class="lede">Whale Island runs whether or not anyone is looking at it.</p>
+
+    <h3>Bandits with opinions</h3>
+    <figure class="shot" style="margin:22px 0">
+      <div class="shot__frame" data-shot="world-bandit-camp.jpg" data-size="1600 × 900" data-label="world-bandit-camp.jpg"></div>
+      <figcaption>A camp that rebuilt itself while you were gone.</figcaption>
+    </figure>
+    <ul>
+      <li>Camps <strong>rise on their own</strong>. Clear one and it comes back.</li>
+      <li>They have <strong>morale</strong>. Break it and they <strong>rout</strong>, running rather than dying.</li>
+      <li>Leaders <strong>call for reinforcements</strong>, and they arrive.</li>
+      <li>Some of them hit <strong>enrage phases</strong> when things go badly for them.</li>
+      <li>They react to your <span class="k">INFAMY</span>. Rookies dread a famous killer and keep their distance.
+          Veterans do the opposite: they come hunting.</li>
+    </ul>
+    <p class="muted">
+      Down an enemy and you can <strong>grip and carry the body</strong>, with executions available from there.
+    </p>
+
+    <h3>The sky</h3>
+    <figure class="shot" style="margin:22px 0">
+      <div class="shot__frame" data-shot="world-moons.jpg" data-size="1600 × 900" data-label="world-moons.jpg"></div>
+      <figcaption>Nine hand-made moon phases, including the red one.</figcaption>
+    </figure>
+    <p class="muted">
+      Day and night cycle, and the moon walks through <strong>nine hand-drawn phases</strong>. One of them is the
+      <span class="k-red">RED MOON</span>. If you see it, that night is different.
+    </p>
+
+    <h3>Seasons, weather, and the climate gauge</h3>
+    <figure class="shot" style="margin:22px 0">
+      <div class="shot__frame" data-shot="world-climate.jpg" data-size="1600 × 900" data-label="world-climate.jpg"></div>
+      <figcaption>The climate gauge, with the hand-drawn frost veil creeping in.</figcaption>
+    </figure>
+    <ul>
+      <li>Four seasons turn, though the island is spring about <strong>95%</strong> of the time.</li>
+      <li>Rain shows up roughly <strong>one day in ten</strong>. Winter brings blizzards.</li>
+      <li>A <strong>Breath-of-the-Wild style climate gauge</strong> tracks how hot or cold you are.</li>
+      <li>Push it and the screen answers: hand-drawn <strong>frost and heat veils</strong>, blue or red skin tints,
+          <strong>shivering</strong> in the cold, <strong>heavy breathing</strong> in the heat.</li>
+    </ul>
+
+    <h3>Critterpedia</h3>
+    <div class="grid grid--3" style="margin:20px 0">
+      <div class="panel" style="text-align:center"><div class="fact__n">12</div><div class="fact__l">Fish</div></div>
+      <div class="panel" style="text-align:center"><div class="fact__n">8</div><div class="fact__l">Bugs</div></div>
+      <div class="panel" style="text-align:center"><div class="fact__n">6</div><div class="fact__l">Fossils</div></div>
+    </div>
+    <p class="muted">
+      Twenty-six things to find and log. Fishing is also a real income stream, not just a collection.
+      And what you catch, you can <strong>cook</strong>.
+    </p>
+  </section>
+
+  <!-- ==================== 10 LIFE ==================== -->
+  <section class="chapter rv" id="life">
+    <div class="chapter__head">
+      <span class="chapter__num">Chapter 10</span>
+      <h2>Life &amp; economy <span class="cj">暮らし</span></h2>
+    </div>
+
+    <h3>Jenny <span style="color:var(--gold)">¥</span></h3>
+    <p class="muted">
+      One currency. It comes in from <strong>bandit bounties</strong> and <strong>fishing</strong>, and it goes
+      out on <strong>spar fees</strong> and <strong>spins</strong>. If you are broke, go hunt something.
+    </p>
+
+    <h3>Titles</h3>
+    <p class="muted">
+      <strong>Twenty titles</strong> to earn and wear. They are the other half of your identity, next to your
+      nen rank and your Total Power.
+    </p>
+
+    <h3>Gangs and crews</h3>
+    <p class="muted">
+      Form a crew, and your crew has its own <strong>infamy board</strong>. Reputation on this island is a group
+      sport if you want it to be.
+    </p>
+
+    <h3>Emotes</h3>
+    <figure class="shot" style="margin:22px 0">
+      <div class="shot__frame" data-shot="world-emotes.jpg" data-size="1600 × 900" data-label="world-emotes.jpg"></div>
+      <figcaption>The emote wheel, chalk icons drawn by hand.</figcaption>
+    </figure>
+    <p class="muted">
+      Press <kbd>+</kbd> for the wheel. The icons are chalk-drawn faces: angry, ow, sad, wowis, question.
+      They are not stickers. Each one runs real <strong>head choreography</strong> with its own VFX and voice.
+    </p>
+
+    <h3>Sleep and the legend</h3>
+    <ul>
+      <li>Stand still for <strong>2 minutes</strong> and your character falls asleep. Snoring included.</li>
+      <li>There is a <strong>40 minute idle animation</strong> in the game. It is a legend, and almost nobody has
+          seen it.</li>
+      <li>Here is the detail that matters: <strong>the timer keeps running while you are asleep.</strong>
+          Being asleep does not reset it.</li>
+    </ul>
+
+    <div class="note note--gold">
+      <span class="note__label">Go find it</span>
+      Forty minutes. One animation. If you have seen it, you know.
+    </div>
+  </section>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <div class="brand" style="margin-bottom:.6rem">
+        <span class="brand__name">NEN<span>X</span>HORIZON</span>
+        <span class="brand__kanji">念</span>
+      </div>
+      <p class="foot__note">
+        Made by kingkerveu. A fan project inspired by Hunter x Hunter, not affiliated with or endorsed by
+        its rights holders. © <span data-year>2026</span>
+      </p>
+    </div>
+    <div class="foot__links">
+      <a href="index.html">Home</a>
+      <a href="board.html">Roadmap</a>
+      <a href="registry.html">Registry</a>
+      <a href="#" data-link="roblox">Roblox</a>
+      <a href="#" data-link="discord">Discord</a>
+      <a href="#" data-link="group">Group</a>
+      <a href="#" data-link="youtube">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/links.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
